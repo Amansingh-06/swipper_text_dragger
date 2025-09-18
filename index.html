@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Slider with Editable Text</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="IMG/IMG1.svg" alt="Image 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="IMG/IMG2.svg" alt="Image 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="IMG/IMG3.svg" alt="Image 3">
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="addTextBtn">➕ Add Text</button>
+    <label>Text Color:</label>
+    <input type="color" id="textColor">
+    <label>Font Size:</label>
+    <input type="range" id="textSize" min="12" max="60" value="20">
+    <label>Font Style:</label>
+    <select id="fontStyle">
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times</option>
+      <option value="Courier New">Courier</option>
+    </select>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
